@@ -1,0 +1,65 @@
+/* Main Roles
+================================================== */
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url(../fonts/JF-Flat-regular.ttf);
+}
+body {
+    font-family: "JF Flat Regular";
+    background-color: #f6f6fc;
+    direction: rtl;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+.meal-card {
+    width: 520px;
+    height: 100%;
+    background-color: #fff;
+    margin: 50px auto;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+}
+.meal-img {
+    width: 160px;
+    padding: 20px 10px;
+    float: right;
+    display: inline-table;
+}
+.meal-info {
+    width: 340px;
+    float: left;
+    padding: 10px 0px;
+}
+.meal-info h3 {
+    color: #ff9f43;
+    margin-bottom: 10px;
+}
+.meal-order {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.meal-order .meal-price {
+    color: #ff9f43;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.meal-order .meal-botton {
+    background-color: #ff9f43;
+    color: #fff;
+    border: 0px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-left: 15px;
+    font-family: "JF Flat Regular";
+}
+.meal-order .meal-botton:hover {
+    background-color: #ff830c;
+}
+.clearfix {
+    clear: both;
+    display: table;
+    content: " ";
+}
