@@ -13,14 +13,50 @@ h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
 }
+.clearfix {
+    clear: both;
+    display: table;
+    content: " ";
+}
+a {
+    text-decoration: none;
+}
+
+/* New Meal
+================================================== */
+.new-meal {
+    margin: 20px auto;
+}
+.new-meal .meal-botton svg {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.new-meal .meal-botton a {
+    color: #fff;
+}
+.new-meal:hover > .meal-botton svg {
+    transform: scale(1.5);
+}
+
+/* Meal Card
+================================================== */
 .meal-card {
     width: 520px;
     height: 100%;
     background-color: #fff;
-    margin: 50px auto;
+    margin: 20px auto;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
-.meal-img {
+.meal-card:hover {
+    transform: scale(1.05);
+}
+.meal-img img {
     width: 160px;
     padding: 20px 10px;
     float: right;
@@ -34,6 +70,25 @@ h1,h2,h3,h4,h5,h6,p {
 .meal-info h3 {
     color: #ff9f43;
     margin-bottom: 10px;
+    display: -webkit-inline-box;
+}
+.meal-info span {
+    float: left;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.meal-info span a {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.meal-info span a:hover {
+    color: #ff9f43
+}
+.meal-info span svg {
+    margin: 0px 10px 0px 15px;
+    color: #ff9f43
 }
 .meal-order {
     display: flex;
@@ -46,7 +101,10 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 18px;
     margin-right: 20px;
 }
-.meal-order .meal-botton {
+
+/* Main Button
+================================================== */
+.meal-botton {
     background-color: #ff9f43;
     color: #fff;
     border: 0px;
@@ -54,12 +112,40 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 4px;
     margin-left: 15px;
     font-family: "JF Flat Regular";
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
-.meal-order .meal-botton:hover {
+.meal-botton:hover {
     background-color: #ff830c;
 }
-.clearfix {
-    clear: both;
-    display: table;
-    content: " ";
+.meal-botton svg {
+    margin-left: 10px;
+}
+
+/* Add New Meal
+================================================== */
+.add-new-meal {
+    margin: 50px auto;
+}
+.add-new-meal h1 {
+    color: #ff9f43;
+}
+.add-new-meal form .title {
+    margin-top: 20px;
+}
+.add-new-meal form input,
+.add-new-meal form textarea,
+.add-new-meal form #meal-tag {
+    padding: 5px 0px;
+    border: 1px solid #ff9f43;
+    width: 100%;
+}
+.add-new-meal form textarea {
+    min-height: 100px;
+}
+.add-new-meal form div input {
+    border: 1px solid transparent;
 }
