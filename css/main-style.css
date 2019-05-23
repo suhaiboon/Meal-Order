@@ -1,151 +1,204 @@
 /* Main Roles
 ================================================== */
 @font-face {
-    font-family: "JF Flat Regular";
-    src: url(../fonts/JF-Flat-regular.ttf);
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "GreatVibes-Regular";
+    src: url(../fonts/GreatVibes-Regular.ttf);
 }
 body {
-    font-family: "JF Flat Regular";
+    font-family: "Montserrat-Regular";
     background-color: #f6f6fc;
-    direction: rtl;
 }
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
 }
-.clearfix {
-    clear: both;
-    display: table;
-    content: " ";
-}
-a {
+a,
+a:hover {
     text-decoration: none;
 }
+section {
+    margin: 80px 0px;
+    border: 1px solid #707070;
+    padding: 50px 0px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px 0px #707070;
+}
+.title h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #e051a7;
+}
 
-/* New Meal
+/* Navbar
 ================================================== */
-.new-meal {
-    margin: 20px auto;
+nav {
+    background-image: url('../Images/theme/header.png');
+    margin: 0px auto;
+    height: 845px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.new-meal .meal-botton svg {
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+.navbar {
+    border-radius: 0px !important;
 }
-.new-meal .meal-botton a {
+.logo {
+    text-align: -webkit-center;
+    margin-top: 150px;
+}
+.logo a {
+    font-family: "GreatVibes-Regular";
+    color: #fff !important;
+    font-size: 180px;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+    float: none;
+    height: 0px;
+}
+.logo p {
+    color: #fff !important;
+}
+.navbar-nav .main-card-btn {
+    padding-top: 5px;
+    font-size: 15px !important;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+    padding: 5px 15px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #fff !important;
+    color: #e051a7 !important;
+    font-weight: bold !important;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+.navbar-nav>li {
+    margin-top: 50px;
+}
+.navbar-nav .main-card-btn a {
+    font-size: 15px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+/* Main Button
+================================================== */
+.second-card-btn a {
+    text-transform: uppercase;
     color: #fff;
+    background-color: #e0e0e0;
+    padding: 0px 20px;
+    font-size: 22px;
+    border-radius: 50px;
 }
-.new-meal:hover > .meal-botton svg {
-    transform: scale(1.5);
+.main-card-btn a {
+    text-transform: uppercase !important;
+    color: #fff !important;
+    background-color: #b347ab !important;
+    padding: 0px 20px !important;
+    font-size: 22px;
+    border-radius: 50px !important;
+}
+.btn-width a {
+    width: 170px;
+    text-align: -webkit-center;
+    display: -webkit-inline-box;
+}
+@media (max-width: 425px) {
+    .btn-width {
+        text-align: center;
+    }
+    .second-card-btn {
+        margin-bottom: 20px;
+    }
+    .btn-width a {
+        width: 95%;
+    }
 }
 
 /* Meal Card
 ================================================== */
 .meal-card {
-    width: 520px;
-    height: 100%;
-    background-color: #fff;
-    margin: 20px auto;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+    border:1px solid #707070;
+    border-radius: 8px;
+    margin: 0 20px;
 }
-.meal-card:hover {
-    transform: scale(1.05);
+.meal-card img {
+    border-radius: 8px;
 }
-.meal-img img {
-    width: 160px;
-    padding: 20px 10px;
-    float: right;
-    display: inline-table;
+.meal-card h3 {
+    padding: 10px;
+    text-align: -webkit-center;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    color: black;
 }
-.meal-info {
-    width: 340px;
-    float: left;
-    padding: 10px 0px;
+.meal-card p {
+    margin: 0 10px 15px 10px;
+    height: 78px;
+    overflow: hidden;
 }
-.meal-info h3 {
-    color: #ff9f43;
-    margin-bottom: 10px;
-    display: -webkit-inline-box;
+.meal-card .meal-card-btn {
+    text-align: center;
+    margin-bottom: 15px;
 }
-.meal-info span {
-    float: left;
-    font-size: 12px;
-    margin-top: 5px;
-}
-.meal-info span a {
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-}
-.meal-info span a:hover {
-    color: #ff9f43
-}
-.meal-info span svg {
-    margin: 0px 10px 0px 15px;
-    color: #ff9f43
-}
-.meal-order {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-.meal-order .meal-price {
-    color: #ff9f43;
-    font-weight: bold;
-    font-size: 18px;
-    margin-right: 20px;
-}
-
-/* Main Button
-================================================== */
-.meal-botton {
-    background-color: #ff9f43;
+.meal-card .meal-card-btn a {
+    text-transform: uppercase;
     color: #fff;
-    border: 0px;
-    padding: 8px 14px;
-    border-radius: 4px;
-    margin-left: 15px;
-    font-family: "JF Flat Regular";
-    cursor: pointer;
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-}
-.meal-botton:hover {
-    background-color: #ff830c;
-}
-.meal-botton svg {
-    margin-left: 10px;
+    background-color: red;
+    padding: 0px 35px;
+    border-radius: 50px;
 }
 
-/* Add New Meal
+/* Top Categories
 ================================================== */
-.add-new-meal {
-    margin: 50px auto;
+.top-categories .item {
+    text-align: center;
+    padding: 20px;
 }
-.add-new-meal h1 {
-    color: #ff9f43;
+.top-categories .item img {
+    border-radius: 50%;
 }
-.add-new-meal form .title {
-    margin-top: 20px;
+.top-categories .item p {
+    font-size: 24px;
+    margin-top: 8px;
+    text-transform: uppercase;
 }
-.add-new-meal form input,
-.add-new-meal form textarea,
-.add-new-meal form #meal-tag {
-    padding: 5px 0px;
-    border: 1px solid #ff9f43;
-    width: 100%;
+
+/* Footer
+================================================== */
+footer {
+    background-image: url('../Images/theme/Footer.png');
+    margin: 0px auto;
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.add-new-meal form textarea {
-    min-height: 100px;
+.footer {
+    margin-top: 300px;
 }
-.add-new-meal form div input {
-    border: 1px solid transparent;
+footer .footer-list li {
+    float: left;
+    list-style: none;
+    font-size: 20px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+footer .footer-list li a {
+    color:#fff;
+}
+footer .footer-list li:first-child {
+    margin: 0;
+    margin-left: -55px;
 }
